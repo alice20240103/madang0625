@@ -20,4 +20,9 @@ public class MemberController {
     public List<Member> list(){
         return dao.findAll();
     }
+
+    @GetMapping("/1")
+    public String hello(){
+        return "hello";
+    }
 }
